@@ -1,0 +1,139 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://semangat.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><!--<script src="https://bbyyy.likeadream.repl.co/script.js"></script>-->
+<head>
+<!-- 
+This code was made by RENDZ!
+Instagram: @rendra_muhammadd
+WhatsApp: 62895339390337
+-->
+</head>
+<body>
+<style>
+body{background-image: url("https://i.pinimg.com/564x/1d/aa/7a/1daa7ac2aaeed14604df30bfd6898ed9.jpg");background-repeat: no-repeat;background-size: 105% 105%;animation:none;transition:all .3s ease;}
+</style>
+
+<div id="bodyblur"></div>
+<div id="konten">
+
+<div id="fotoloveu"><div class="image">
+<img id="animasi" src="https://i.pinimg.com/564x/d2/07/00/d207002ff11f0e3406efe7d29fa11b36.jpg" width="100px" height="100px"/></div><span id="sp2"></span><span id="sp3"></span></div>
+<div id="ftawal"><div class="image">
+<img src="https://i.postimg.cc/1tYFjC4j/rain-together.gif" width="100px" height="100px"/></div></div>
+
+<div id='subkonten'>
+    <p data-text='&#9829;' class='catatan sek' onClick='expl();'>
+    <marquee id="marq">
+    Hai <b id="kamu"></b> cantikkk~ <i id="spasi"></i>
+    Gimana nih hari-harinya?? &#129402;<i id="spasi"></i>
+    Baik-baik2 aja kah?? &#129402;<i id="spasi"></i>
+    Atau kamu masih cape ngehadapi semua sendiri??  &#129402;<i id="spasi"></i>
+    Aku keinget malam waktu kamu cerita semua sambatmu ke aku sih.. :) <i id="spasi"></i>
+    Jangan ragu-ragu yak kalo pingin cerita lagi.. :) <i id="spasi"></i>
+    Semangat yakk! Inget masih ada aku kok.. ^_^ <i id="spasi"></i>
+    Jangan nyerah sama hidupmu, kamu pasti bisa.. &#129303;<i id="spasi"></i>
+    Kalau allah ngasih kesempatan, insyaa allah aku bisa nemenin selagi aku masih ada.. &#129303;  <i id="spasi"></i>
+    Oh iya, klik icon LOVE di samping yaa &#128525;</marquee>
+    </p>
+    </div>
+
+<div id="tombWA"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>
+Kirim</a></div>
+
+</div>
+
+<script> 
+//Teks klik love
+var a=0,finish;
+finish = "Keep Spirit yaa si cantik.. ";
+//Teks klik love
+var p=0,finish1;
+finish1 = "Jangan sedih & badmood lagi yaa <3";
+//Teks klik love
+var i=0,finish2;
+finish2 = "Selagi aku masih ada, Insyaa allah aku ga akan biarin kamu sendiri ^_^";  
+function play() {
+//Link Audio Bisa Diganti
+  var audio = new Audio('https://replit.com/@rendramuhamm4d/lagump3#zoekanolnot_20220404_3.mp3');audio.play();
+  audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);
+}         
+
+//Pesan WhatsApp
+ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=62895339390337&text=" + window.nama + " udah liat semuanya, lucu banget.. Makasih yaa ^_^" + "%0A%0A" + "- " + dateTime;} 
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Nama kamu?',
+                    input: 'text',
+                    confirmButtonText: 'Lanjut',
+                    showCancelButton: false,
+                });                           
+                if(nama){
+                	window.nama = nama;
+                    finish = finish + ", " + nama + "!";    
+                    document.getElementById("kamu").innerHTML = "" + window.nama;                      
+                    await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
+                    setTimeout(showDiv, 100);play();                                    
+                } else {
+                    await swals.fire('Nama tidak boleh kosong, ya!');
+                    mulai();
+                }
+            }            
+            mulai();
+</script>
+<script>
+  function showDiv() {StartMarquee();document.getElementById('subkonten').style.opacity = "1"; document.getElementById('konten').style.top = "0";document.getElementById('ftawal').style.opacity = "1";document.getElementById('ftawal').style.height = "100px";document.querySelector("body").style.animation = "fanim 9s ease infinite";}
+  function tombol() {document.getElementById('tombWA').style.visibility = "visible";document.getElementById('tombWA').style.opacity = "1";}  
+
+async function duar(){
+var e1 = document.getElementById('animasi');e1.classList.add("degdeg");
+duar2();setInterval(createHeart,200);
+document.body.style.backgroundColor = "#000";
+document.getElementById('ftawal').style.opacity = "0";document.getElementById('ftawal').style.height = "0";
+document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "120px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";
+document.getElementById('subkonten').style.display = "none";
+}
+function duar2(){
+if(a<finish.length){document.getElementById("sp2").innerHTML += finish.charAt(a);a++;setTimeout(duar2,100);}
+if(a==finish.length){duar3();}
+}
+function duar3(){
+if(i<finish2.length){document.getElementById("sp3").innerHTML += finish2.charAt(i);i++;setTimeout(duar3,200);}
+if(i==finish2.length){setTimeout(tombol,1000);}
+}
+function duar4(){
+if(i<finish1.length){document.getElementById("sp4").innerHTML += finish1.charAt(i);i++;setTimeout(duar3,200);}
+if(i==finish1.length){setTimeout(tombol,1000);}
+}
+
+async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+function StartMarquee(){var marquee = document.getElementById ("marq");marquee.start();}
+function StopMarquee(){var marquee = document.getElementById ("marq");marquee.stop();}
+StopMarquee();
+</script>
+<script>
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 100) {
+       heartArr[0].remove()
+    }
+},100)
+</script>
+<div class="footer" style="text-align:center; margin: auto; position:absolute; bottom: 0;width: 100%; height: 60px; color: purple; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Made with ❤️ by RENDZ</div>
+
+</body>
+</html>
